@@ -38,9 +38,9 @@ class Render{
             this.drawBackground();
             
             this.drawSnakes();
-          
-            
+                  
             this.drawGrid();
+            document.getElementById("aliveSnakeCount").innerHTML = this.numAliveSnakes;
             await delay(16);
         }
     }
