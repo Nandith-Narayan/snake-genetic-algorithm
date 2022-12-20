@@ -39,7 +39,7 @@ class RenderNN{
                     this.g.lineWidth=1;
                     this.g.font = "16px serif";
                     this.g.direction = "ltr";
-                    this.g.fillText(inputs[j], x, y+25);
+                    this.g.fillText(outputs[j], x, y+25);
                 }
             }
         }
