@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    padding: 0;
+    --bg-col: #101010;
+    --txt-col: #39FF14;
+    background-color: var(--bg-col);
+    color: var(--txt-col);
+    
+    
+}
+
+#canvas{
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 0.5em;
+    max-width:500px;
+
+}
+
+#title-bar{
+    background-color: #202020;
+    width: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+
+#horizontal-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr
+}
+
+#vertical-container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    
+}
+
+#canvas-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+#canvas-container-horizontal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+#controls-container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+#control-panel{
+    height: 500px;
+    margin: 2em;
+    width: 30vw;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 1em;
+    background: #222222;
+    border-color: black;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding-top: 1em;
+
+}
+#speed-select{
+    margin-top: 0.25em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5em;
+    margin-bottom: 0.5em;
+
+}
+h6{
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+#stats-container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+#stats-panel{
+    height: 500px;
+    margin: 2em;
+    width: 30vw;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 1em;
+    background: #222222;
+    border-color: black;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding-top: 1em;
+
+}
+#render-controls{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#render-panel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5em;
+}
+#network-canvas-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+#best-network-canvas{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 0.5em;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
