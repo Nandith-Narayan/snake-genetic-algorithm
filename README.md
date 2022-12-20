@@ -1,1 +1,1 @@
-# snake-genetic-algorithm
+# A JavaScript implementation of a AI that learns to play the game of snake via a genetic algorithm
