@@ -21,14 +21,29 @@ class RenderNN{
                 }
             }
         }
+        let inputs=["Angle between food and snake","Distance to food","Top cell blocked","Bottom cell blocked","Left cell blocked","Right cell blocked","Bias"];
+        let outputs=["Up", "Down", "Left", "Right"];
         
         for(let i = 0;i<numLayers;i++){
             let x = (i+1) * 1000.0 / (numLayers + 1);
             for(let j = 0;j<net.topology[i];j++){
                 let y = (j+1) * 500.0 / (net.topology[i] + 1);
                 this.drawNode(x, y);
+                this.g.fillStyle="#FFFFFF";
+                if(i==0){
+                    this.g.lineWidth=1;
+                    this.g.font = "16px serif";
+                    this.g.direction = "rtl";
+                    this.g.fillText(inputs[j], x, y+25);
+                }else if(i==numLayers-1){
+                    this.g.lineWidth=1;
+                    this.g.font = "16px serif";
+                    this.g.direction = "ltr";
+                    this.g.fillText(inputs[j], x, y+25);
+                }
             }
         }
+        
         
     }
     drawWeight(x1, y1, x2, y2, weight){
